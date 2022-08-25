@@ -7,3 +7,11 @@ class Wordle:
         self.secret: str = secret
         self.attempts = []
         pass
+
+    @property
+    def is_solved(self):
+        return self.attempts[-1] == self.secret
+
+    @property
+    def can_attempt(self):
+        pass
