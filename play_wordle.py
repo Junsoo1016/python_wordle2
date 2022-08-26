@@ -4,8 +4,9 @@ def main():
     print("Hello Wordle!")
     wordle = Wordle("APPLE")
 
-    while True:
+    while wordle.can_attempt:
         x = input("Type your guess: ")
+        wordle.attempts.append(x)
         if x == wordle.secret:
             print("You have guessed the word!")
             break

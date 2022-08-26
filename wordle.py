@@ -8,6 +8,9 @@ class Wordle:
         self.attempts = []
         pass
 
+    def attempt(self, word: str):
+        self.attempt.append(word)
+
     @property
     def is_solved(self):
         return self.attempts[-1] == self.secret
