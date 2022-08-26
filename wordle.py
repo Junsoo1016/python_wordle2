@@ -13,7 +13,7 @@ class Wordle:
 
     @property
     def is_solved(self):
-        return self.attempts[-1] == self.secret
+        return len(self.attempts) > 0  and self.attempts[-1] == self.secret
 
     @property
     def remaining_attempts(self) -> int:

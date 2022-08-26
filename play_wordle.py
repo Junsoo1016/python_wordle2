@@ -7,10 +7,9 @@ def main():
     while wordle.can_attempt:
         x = input("Type your guess: ")
         wordle.attempts.append(x)
-        if x == wordle.secret:
-            print("You have guessed the word!")
-            break
-        print("Your guess is incorrect.")
+    
+    if wordle.is_solved:
+        print("You've solved the puzzle.")
 
 if __name__ == "__main__":
     main()
