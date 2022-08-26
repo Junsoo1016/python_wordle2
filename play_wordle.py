@@ -9,7 +9,9 @@ def main():
         wordle.attempts.append(x)
     
     if wordle.is_solved:
-        print("You've solved the puzzle.")
+        print("You've solved the puzzle!")
+    else:
+        print("You've failed to solve the puzzle!")
 
 if __name__ == "__main__":
     main()

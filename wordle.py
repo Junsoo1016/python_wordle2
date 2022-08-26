@@ -21,5 +21,4 @@ class Wordle:
 
     @property
     def can_attempt(self):
-        return len(self.attempts) < self.MAX_ATTEMPTS and not self.is_solved
-        pass
+        return self.remaining_attempts > 0 and not self.is_solved
