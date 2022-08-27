@@ -11,6 +11,8 @@ class Wordle:
     def attempt(self, word: str):
         self.attempt.append(word)
 
+    def guess(self, word: str):
+
     @property
     def is_solved(self):
         return len(self.attempts) > 0  and self.attempts[-1] == self.secret
